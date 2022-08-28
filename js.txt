@@ -1,0 +1,44 @@
+1. += Оператор сложения с присваиванием (+=) добавляет значение правого операнда 
+к переменной и присваивает переменной результат.
+Пример:
+let a = 2;
+let b = 'hello';
+
+console.log(a += 3);
+будет 5 т.к a прибавляет и присваивает 3!!!!
+console.log(b += ' world'); 
+
+2. Просто поместите внутрь шаблона с обратными кавычками ещё одни, обернув их в подстановку ${ }.`` бэктики не забывать
+
+3. Оператор typeof возвращает строку, указывающую тип операнда.Он показывается что это.Число,строка и тд.
+Пример:
+console.log(typeof 42);
+// expected output: "number"
+
+console.log(typeof 'blubber');
+// expected output: "string"
+
+console.log(typeof true);
+// expected output: "boolean"
+
+console.log(typeof undeclaredVariable);
+// expected output: "undefined"
+
+if (typeof(times) !== 'number' || times <= 0) {
+        return num;
+    }
+
+4. Присваение:
+Пример 1:
+const a = prompt('Один из последних просмотренных фильмов?', ''),
+      b = prompt('На сколько оцените его?', ''),
+      c = prompt('Один из последних просмотренных фильмов?', ''),
+      d = prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+Пример 2:
+ for (let i = 1; i <= 3; i++) {
+        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
+    }
